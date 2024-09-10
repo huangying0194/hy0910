@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>huangying</title>
+</head>
+
+<body>
+    <img id="myimage" onclick="changeImage()" src="images/pic_bulboff.gif" width="100" height="180">
+    <h2>点击灯泡就可以打开或关闭这盏灯</h2>
+
+    <script>
+        function changeImage() {
+            const element = document.getElementById("myimage");
+            // alert("函数调用成功");
+            // let a =confirm('函数是否调用成功？');
+            // console.log(a);
+
+            if (element.src.includes("pic_bulboff.gif")) //判断灯泡开关状态
+            {
+                element.src = "images/pic_bulbon.gif"; //打开灯泡
+            } else {
+                element.src = "images/pic_bulboff.gif"; //关闭灯泡
+            }
+        }
+    </script>
+</body>
+
+</html>
